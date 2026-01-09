@@ -2,7 +2,7 @@
 /*  Übergreifend / Body                              */
 /*  -----------------------------------------        */
 html, body {
- background-image:url("");
+ background-image:url("sanfte-wellen-im-sanften-licht.jpg");
  background-repeat:no-repeat; 
  background-size: cover;      
  overflow:hidden;             
@@ -13,8 +13,8 @@ html, body {
   position:fixed;             
   top:0;                     
   left:0;                    
-  border: 1px solid #ccc;    
-  background-color:green;    
+  border: 1px solid #0b167900;    
+  background-color:rgb(0, 0, 0);    
   width:100%;                
   height:100px;              
   z-index:2;                 
@@ -24,8 +24,8 @@ html, body {
   position:fixed;            
   top: 100px;                
   left:0;                    
-  border: 1px solid #ccc;   
-  background-color:red;      
+  border: 1px solid #21f1e000;   
+  background-color:rgb(146, 163, 211);      
   width:200px;               
   min-height:300px;          
   z-index:2;                 
@@ -41,18 +41,18 @@ html, body {
   padding-right:210px;      
   padding-top:20px;          
   padding-bottom:60px;      
-  border: 1px solid #ccc;    
+  border: 1px solid #11044b00;    
   height:100%;              
   overflow-y: auto;          
-  background-color:rgba(255,255,255,0.5); 
+  background-color:rgba(8, 250, 230, 0); 
 }
 
 #newsbereich {
   position:fixed;            
   right:0px;                 
   top: 100px;                
-  border: 1px solid #ccc;  
-  background-color:yellow;   
+  border: 1px solid #cccccc00;  
+  background-color:rgb(0, 0, 0);   
   min-height:300px;          
   z-index:2;                 
   }
@@ -63,7 +63,7 @@ html, body {
  left:0;                      
  border: 1px solid #ccc;      
  width: 100%;                 
- background-color: blue;      
+ background-color: rgb(0, 0, 0);      
  height:50px;                 
  z-index:2;                     
 } 
@@ -77,21 +77,38 @@ html, body {
 /*  Schriftformatierung                       */
 /*  ----------------------------------------- */
 
-p {
-font-family: Garamond, Verdana, Geneva, Lucida, Avantgarde, Arial; 
-font-style:normal;                                                 
-font-size:11pt;                                                    
-font-weight:normal;                                                
-color:#000000;                                                     
-}
-.title {
-font-size:12pt;                                                    
-font-weight:bold;                                                  
-}
 {
 font-family: 'Montserrat', sans-serif;  
 font-style:normal;                      
 font-size:11pt;                         
-font-weight:400;                        
+font-weight:400;                       
 color:#000000;                          
+}
+
+ #logobereich {
+  position:fixed;               
+  top:0;                            
+  left:0;                            ;
+  border: 0px solid #0c0d6b; 
+  background-image:url("name-des-bildes.png");
+  background-repeat:no-repeat; 
+  background-size: cover;    
+  background-color:rgba(143, 50, 230, 0);    
+  width:200px;                 
+  height:100px;                 
+  z-index:3;                                      
+}
+
+/*  ----------------------------------------------------------- */
+/*  Bildformatierung für Bilder im Textbereich      */
+/*  ----------------------------------------------------------- */
+.text-image-left {
+width:200px;  
+margin:0px;   
+float:left;        
+}
+.text-image-right {
+width:200px; 
+margin:0px;  
+float:right;     
 }
