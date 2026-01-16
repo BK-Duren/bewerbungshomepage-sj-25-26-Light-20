@@ -32,18 +32,41 @@
 	<META NAME ="description" content="Bewerbungshomepage">
 	<META NAME ="keywords" content="Schlüsselwort 1, Schlüsselwort 2,.">
 	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	</HEAD>
-	<BODY>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+   <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+ <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
 		<div id="kopfbereich">
+			<p class=“header-title“>Dies ist eine Headerüberschrift</p>
 		</div> <!-- Ende kopfbereich -->
 
 		<div id="navibereich">
+			<ul id="nav" class="naviformat mainnav">
+<li><a id="main_menu_item_home" class="" href="index.html">HOME</a></li>
+<li><a id="main_menu_item_daten" class="" href="daten.html">PERSÖNLICHES</a></li>
+<li><a id="main_menu_item_schulbildung" class="" href="schulbildung.html">SCHULBILDUNG</a></li>
+<li><a id="main_menu_item_berufsbildung" class="" href="berufsbildung.html">BERUFSBILDUNG</a></li>
+<li><a id="main_menu_item_kontakt" class="" href="kontakt.html">KONTAKT</a></li>
+</ul>
 		</div> <!-- Ende navibereich -->
 
 		<div id="textbereich">
 		</div> <!-- Ende textbereich -->
 
 		<div id="newsbereich">
+			<div class = "teaser">
+                                          <p class = "teaser_date">News-Datum</p>
+                                          <p class = "teaser_title">News-Titel</p>
+                                          <p class = "teaser_text">Dies ist der News-Text</p>
+                                 <a href = "berufsbildung.html" class="teaser_link">...mehr</a>
+                                 <hr class="teaser_border">
+                             </div>
 		</div> <!-- Ende newsbereich -->
 
 		<div id="fussbereich">
