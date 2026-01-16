@@ -82,8 +82,15 @@ font-family: 'Montserrat', sans-serif;
 font-style:normal;                      
 font-size:11pt;                         
 font-weight:400;                       
-color:#000000;                          
+color:#000000;                     
+
+.header-title {
+font-family:‘Montserrat’, sans-serif;   ! Festlegung der Schriftart;
+font-size:24pt;				! Festlegung des Schriftgröße;
+font-weight:700;			! Festlegung des Fettschrift, hier können Sie auch bold angeben;
+text-align:center;			! Schriftausrichtung, möglich ist left | center | right;
 }
+
 
  #logobereich {
   position:fixed;               
@@ -94,8 +101,8 @@ color:#000000;
   background-repeat:no-repeat; 
   background-size: cover;   
   background-color:rgba(143, 50, 230, 0)    
-  width:200px;                 
-  height:100px;                 
+  width:100px;                 
+  height:90px;                 
   z-index:3;                                      
 }
 
