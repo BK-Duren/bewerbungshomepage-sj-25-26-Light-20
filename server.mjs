@@ -34,6 +34,7 @@ app.all("*", checkHttps);
 app.use(express.static("public"));
 app.use(express.static("assets"));
 app.use(express.static("content"));
+app.use(express.static("views"));
 
 // This is the basic-routing
 app.get("/", (request, response) => {
@@ -43,7 +44,22 @@ app.get("/", (request, response) => {
 app.get("/index", (request, response) => {
   response.sendFile(`${__dirname}/views/index.html`);
 });
-
+// Routing der daten.html als /daten
+app.get("/daten", (request, response) => {
+  response.sendFile(`${__dirname}/views/daten.html`);
+});
+// Routing der schulbildung.html als /schulbildung
+app.get("/schulbildung", (request, response) => {
+  response.sendFile(`${__dirname}/views/schulbildung.html`);
+});
+// Routing der berufsbildung.html als /berufsbildung
+app.get("/berufsbildung", (request, response) => {
+  response.sendFile(`${__dirname}/views/berufsbildung.html`);
+});
+// Routing der kontakt.html als /kontakt
+app.get("/kontakt", (request, response) => {
+  response.sendFile(`${__dirname}/views/kontakt.html`);
+});
 // listen for requests :)
 var listener = app.listen(process.env.PORT, () => {
   console.log(`Your app is listening on port ${listener.address().port}`);
