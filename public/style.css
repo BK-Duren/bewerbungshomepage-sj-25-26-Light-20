@@ -92,61 +92,37 @@ text-align:center;			! Schriftausrichtung, möglich ist left | center | right;
 }
 
 
- #logobereich {
-  position:fixed;               
-  top:0;                            
-  left:0;                            
-  border: 0px solid #0c0d6b; 
-  background-image:url("name-des-bildes.png");
-  background-repeat:no-repeat; 
-  background-size: cover;   
-  background-color:rgba(143, 50, 230, 0)    
-  width:100px;                 
-  height:90px;                 
-  z-index:3;                                      
-}
-
-/*  ----------------------------------------------------------- */
-/*  Bildformatierung für Bilder im Textbereich      */
-/*  ----------------------------------------------------------- */
-.text-image-left {
-width:200px;  
-margin:0px;   
-float:left;        
-}
-.text-image-right {
-width:200px; 
-margin:0px;  
-float:right;     
-}
+/*  Einbindung des DIV-Bereiches „logobereich“ mit entsprechender Positionierung (dort einbinden, wo auch die anderen DIV-Bereiche definiert wurden)     */
 
  #logobereich {
-  position:fixed;               
-  top:0;                            
-  left:0;                            
-  border: 0px solid #ccc; 
+  position:fixed;               ! Position des Logos ist fest;
+  top:0;                            ! Position oben;
+  left:0;                            ! Position ganz links;
+  border: 0px solid #ccc; ! Rahmenart und -farbe;
   background-image:url("stock-vector-swoosh-letter-logo-design-business-company-identity-water-wave-logo.jpg");
   background-repeat:no-repeat; 
   background-size: cover;    
-  background-color:rgba(16,78,139,0);    
-  width:200px;                 
-  height:100px;                 
-  z-index:3;                                      
+  background-color:rgba(16,78,139,0);    ! Hintergrundfarbe;
+  width:200px;                 ! Breite des Kopfbereichs;
+  height:100px;                ! Höhe des Kopfbereichs; 
+  z-index:3;                      ! Logo überlagert andere Bereiche;                
 }
 
 /*  ----------------------------------------------------------- */
 /*  Bildformatierung für Bilder im Textbereich      */
 /*  ----------------------------------------------------------- */
 .text-image-left {
-width:200px;  
-margin:0px;   
-float:left;        
+width:100px;  ! Größe des Bildes wird festgelegt;
+margin:0px;   ! Abstand zu anderen Objekten;
+float:left;        ! Ausrichtung links;
 }
 .text-image-right {
-width:200px; 
-margin:0px;  
-float:right;     
+width:100px; ! Größe des Bildes wird festgelegt;
+margin:0px;  ! Abstand zu anderen Objekten;
+float:right;     ! Ausrichtung rechts;
 }
+
+
 /*  -----------------------------------------        */
 /*  Menüformatierung                                 */
 /*  -----------------------------------------        */
