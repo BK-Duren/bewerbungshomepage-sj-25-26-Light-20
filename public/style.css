@@ -122,7 +122,6 @@ margin:0px;  ! Abstand zu anderen Objekten;
 float:right;     ! Ausrichtung rechts;
 }
 
-
 /*  -----------------------------------------        */
 /*  Menüformatierung                                 */
 /*  -----------------------------------------        */
@@ -164,6 +163,7 @@ font-size:90%;            	! Festlegung des Schriftgröße;
 	text-shadow: 1px 1px white, 2px 2px white, 3px 3px white; ! Text-Schatten;
   	background-color:rgba(255,255,255,0.7);   ! Hintergrundfarbe;
 }
+
 /*  -----------------------------------------        */
 /*  Für Teaser (Blickfang)             	        */
 /*  -----------------------------------------        */
