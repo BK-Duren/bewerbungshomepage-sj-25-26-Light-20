@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 	<HEAD>
-	<TITLE>Der Titel der Seite </TITLE>
+	<TITLE>Steliod Vrabacis Bewerbungshomepage </TITLE>
 	<META NAME="AUTHOR" CONTENT="Stelios Vrabacis">
 	<META NAME="COPYRIGHT" CONTENT="Copyright (c) 2025 by Stelios Vrabacis">
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -18,11 +18,9 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
  <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
-		<div id="kopfbereich">
-		
+		<div id="kopfbereich">		
 		</div> <!-- Ende kopfbereich -->
-		<div id="navibereich">
-			
+		<div id="navibereich">	
 		</div> <!-- Ende navibereich -->
 
 		<div id="textbereich">
@@ -33,25 +31,15 @@
 
 		</div> <!-- Ende textbereich -->
 
-		<div id="newsbereich">
-	<div class = "teaser">
-          <p class = "teaser_date">News-Datum</p>
-        <p class = "teaser_title">News-Titel</p>
-        <p class = "teaser_text">Dies ist der News-Text</p>
-       <a href = "berufsbildung.html" class="teaser_link">...mehr</a>
-      <hr class="teaser_border">
-     </div>
-
-		</div> <!-- Ende newsbereich -->
+		<div id="newsbereich"></div> <!-- Ende newsbereich -->
 
 		<div id="fussbereich"> </div> <!-- Ende fussbereich -->
    <script>
     $( window ).on( "load", function() { 
-       load_content('navibereich', 'content/content-navi.html');
-       load_content('newsbereich', ' content/content-news.html');
-       load_content('fussbereich', ' content/content-footer.html');
-       load_content('kopfbereich', ' content/content-header.html');
-       load_content('kopfbereich', ' content/content-block.html');
+       load_content('navibereich', 'content-navi.html');
+       load_content('newsbereich', 'content-news.html');
+       load_content('fussbereich', 'content-footer.html');
+       load_content('kopfbereich', 'content-header.html');
     });
   </script>
    </body>
